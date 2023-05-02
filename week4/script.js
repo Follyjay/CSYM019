@@ -1,9 +1,10 @@
 function getValue(){
     var element = document.getElementById('txtInput');
-    alert(element.value);
+    var element2 = document.getElementById('mydiv');
+    element2.innerText = element.value;
 }
 function myLoadFunction(){
-    var element = document.getElementById('btnSubmit');
-    element.addEventListener('click', getValue);
+    var element = document.getElementById('txtInput');
+    element.addEventListener('keyup', getValue);
 }
 document.addEventListener('DOMContentLoaded', myLoadFunction);
