@@ -1,0 +1,65 @@
+.part1 h2{
+    color: red;
+}
+.part1 p{
+    color: white;
+    background-color: black;
+}
+
+.part2 h2{
+    color: green;
+}
+.part2 p{
+    color: green;
+    background-color: darkred;
+}
+
+.part3 p{
+    color: green;
+}
+.part3 div p{
+    color: green;
+}
+
+.part4 > p{
+    color: green;
+}
+
+/*this is the css for exercise2.htm*/
+
+.csym019{
+    background-color: lightblue;
+    width: 50%;
+    float: left;
+}
+
+.csym015{
+    background-color: yellow;
+    width: 50%;
+    float: right;
+}
+
+/*this is the css for exercise3*/
+
+.grid1{
+    background-color: lightcyan;
+    width: 50%;
+    width: 47.5%;
+    padding: 1% 1%;
+    float: left;
+}
+
+.grid2{
+    background-color: lightgrey;
+    width: 47.5%;
+    padding: 1% 1%;
+    float: right;
+}
+
+section h1{
+    color: red;
+}
+
+.course2{
+    margin-top: 50px;
+}
