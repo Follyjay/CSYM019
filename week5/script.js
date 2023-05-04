@@ -1,4 +1,4 @@
-function clickMeFunction(){
+/*function clickMeFunction(){
     var element = document.getElementById('circle');
     
     var positionLeft = element.offsetLeft;
@@ -10,4 +10,9 @@ function clickFuntion(){
     //element.addEventListener('click', clickMeFunction);
     document.addEventListener('keydown', clickMeFunction);
 }
-document.addEventListener('DOMContentLoaded', clickFuntion);
+document.addEventListener('DOMContentLoaded', clickFuntion);*/
+
+function myKeyDown(event) {
+    console.log(event.keyCode);
+}
+document.addEventListener('keydown', myKeyDown);
