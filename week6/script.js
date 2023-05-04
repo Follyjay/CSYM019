@@ -1,61 +1,31 @@
 function myLoadFunction() {
     const ctx = document.getElementById('myChart').getContext('2d');
     var myChartConfig = {
-        type: 'pie',
+        type: 'scatter',
         data: {
-            labels: ['kcal', 'fat', 'saturates', 'carbs', 'sugars', 'fibre', 'protein', 'salt'],
+            labels: ['Nigeria', 'Ghana', 'Togo', 'South Africa', 'Kenya'],
             /* The two datasets are given below as twi items in an array of json objects, i.e. [{}, {}]*/
             datasets: [
             {
-                label: 'Nutrition - R1',
-                data: [12, 19, 3, 5, 2, 3, 5, 7],
+                type: 'bar',
+                label: 'Population Dataset',
+                data: [12000000, 1900000, 3000000, 5000000, 2340000, 15000000],
                 backgroundColor: [
                     "red",
                     "blue",
                     "yellow",
                     "green",
-                    "purpple",
-                    "orange",
-                    "black",
-                    "white"
+                    "purpple"
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)'
+                    'rgba(153, 102, 255, 1)'
                 ],
                 borderWidth: 1
-            },
-            {
-                label: 'Nutrition - R2',
-                data: [10, 9, 13, 15, 12, 13, 3, 2],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)'
-                ],
-                borderWidth: 1
-            }        
+            }     
         ]
         },
         options: {
