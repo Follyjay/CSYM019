@@ -1,15 +1,13 @@
 function clickMeFunction(){
     var element = document.getElementById('circle');
-    var changeopacity = parseFloat(element.style.opacity);
-    element.style.opacity = changeopacity - 0.1;
+    
+    var positionLeft = element.offsetLeft;
+    element.style.left = positionLeft - 10 + 'px';
     
 }
-function interval(){
-    setInterval(clickMeFunction, 1000);
-}
 function clickFuntion(){
-    var element = document.getElementById('circle');
-    element.style.opacity = 1;
-    element.addEventListener('click', interval)
+    //var element = document.getElementById('circle');
+    //element.addEventListener('click', clickMeFunction);
+    document.addEventListener('keydown', clickMeFunction);
 }
 document.addEventListener('DOMContentLoaded', clickFuntion);
