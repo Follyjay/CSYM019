@@ -1,18 +1,26 @@
-/*function clickMeFunction(){
+
+function moveElement(event){
     var element = document.getElementById('circle');
     
     var positionLeft = element.offsetLeft;
-    element.style.left = positionLeft - 10 + 'px';
-    
+    var positionTop = element.offsetTop;
+
+    if (event.keyCode == 37){
+        element.style.left = positionLeft - 10 + 'px';
+    }
+    if (event.keyCode == 38){
+        element.style.top = positionTop - 10 + 'px';
+    }
+    if (event.keyCode == 39){
+        element.style.left = positionLeft + 10 + 'px';
+    }
+    if (event.keyCode == 40){
+       element.style.top = positionTop + 10 + 'px';
+    }
 }
 function clickFuntion(){
     //var element = document.getElementById('circle');
     //element.addEventListener('click', clickMeFunction);
-    document.addEventListener('keydown', clickMeFunction);
+    document.addEventListener('keydown', moveElement);
 }
-document.addEventListener('DOMContentLoaded', clickFuntion);*/
-
-function myKeyDown(event) {
-    console.log(event.keyCode);
-}
-document.addEventListener('keydown', myKeyDown);
+document.addEventListener('DOMContentLoaded', clickFuntion);
